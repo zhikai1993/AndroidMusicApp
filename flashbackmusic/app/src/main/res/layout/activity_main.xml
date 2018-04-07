@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.android.flashbackmusic.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/appbar_padding_top"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_weight="1"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="@string/app_name" >
+
+            <ImageButton
+                android:id="@+id/refreshButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/quantum_ic_refresh_white_24"
+                android:background="@color/colorPrimary"
+                android:layout_gravity="right"
+                android:layout_marginRight="50dp"
+                />
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:id="@+id/sortNav">
+        <Button
+            android:id="@+id/buttonTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Title"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/buttonArtist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="85dp"
+            android:text="Artist"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/buttonAlbum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170dp"
+            android:text="Album"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/buttonFavorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="255dp"
+            android:text="Favorite"
+            android:textSize="16dp" />
+
+    </android.support.design.widget.NavigationView>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <com.android.flashbackmusic.AddMusic
+        android:id="@+id/add_music_main"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="110dp" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="160dp"
+        android:layout_marginBottom="50dp"
+        >
+
+        <com.android.flashbackmusic.SongMode
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/song_main" />
+
+    </ScrollView>
+
+    <com.android.flashbackmusic.AlbumMode
+        android:id="@+id/album_main"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.android.flashbackmusic.FlashbackMode
+        android:id="@+id/flashback_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.android.flashbackmusic.CurrentSongBlock
+        android:id="@+id/current_song_block_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.android.flashbackmusic.SwitchActivity
+        android:id="@+id/switch_between_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+
+    </com.android.flashbackmusic.SwitchActivity>
+
+</android.support.design.widget.CoordinatorLayout>

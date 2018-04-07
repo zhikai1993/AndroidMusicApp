@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:id="@+id/switch_between"
+    android:layout_gravity="bottom"
+    android:translationZ="0.01dp">
+
+    <Button
+        android:id="@+id/Songs"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text="Songs"
+        android:textSize="15dp"
+        android:layout_height="wrap_content"
+        android:clickable="true"/>
+    <Button
+        android:id="@+id/Album"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text="Albums"
+        android:textSize="15dp"
+        android:layout_height="wrap_content"
+        android:clickable="true"/>
+
+    <Button
+        android:id="@+id/Flashback"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text="Vibe"
+        android:textSize="15dp"
+        android:layout_height="wrap_content"
+        android:clickable="true"/>
+
+</LinearLayout>

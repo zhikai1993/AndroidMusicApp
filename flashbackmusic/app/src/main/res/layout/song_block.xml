@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    android:id="@+id/song_block"
+    >
+
+    <TextView
+        android:id="@+id/song_title"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="Sample Song"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:focusable="false"
+        android:clickable="false"
+        android:id="@+id/song_artist_album"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="Sample Artist | Sample Album"
+        android:layout_marginLeft="10dp"/>
+
+    <ImageButton
+        android:id="@+id/song_favorite"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="-40dp"
+        android:layout_marginRight="10dp"
+        android:focusable="false"
+        android:clickable="false"
+        android:src="@android:drawable/ic_input_add" />
+
+    <Button
+        android:id="@+id/more_info"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="-35dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/ic_info_outline_black_24dp" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/setTime"
+        android:layout_marginRight="20dp"
+        android:hint="@string/time"
+        android:inputType="text"
+        android:imeOptions="actionDone"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_marginLeft="10dp" />
+
+
+    <LinearLayout
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+</LinearLayout>

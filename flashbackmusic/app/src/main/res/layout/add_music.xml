@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="50dp"
+    android:id="@+id/add_music"
+    android:translationZ="0.0dp"
+    >
+
+    <EditText
+        android:id="@+id/add_music_textedit"
+        android:layout_width="320dp"
+        android:layout_height="fill_parent"
+        android:hint="Enter URL"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp" />
+
+    <Button
+        android:id="@+id/add_music_button"
+        android:layout_width="75dp"
+        android:text="Add"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end" />
+
+</LinearLayout>

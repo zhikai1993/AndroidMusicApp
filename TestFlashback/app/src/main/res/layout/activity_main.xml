@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.valentinadibs.testflashback.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/appbar_padding_top"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_weight="1"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="@string/app_name" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <com.example.valentinadibs.testflashback.SongMode
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="70dp"
+            android:id="@+id/song_main" />
+
+    </ScrollView>
+
+    <com.example.valentinadibs.testflashback.AlbumMode
+        android:id="@+id/album_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.example.valentinadibs.testflashback.FlashbackMode
+        android:id="@+id/flashback_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.example.valentinadibs.testflashback.CurrentSongBlock
+        android:id="@+id/current_song_block_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.example.valentinadibs.testflashback.TabSwitch
+        android:id="@+id/switch_between_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</android.support.design.widget.CoordinatorLayout>
